@@ -24,10 +24,26 @@ body {
     bottom: 620px;
     background-color: rgba(0, 0, 0, 0.5);
     font-size: 78px;
-    font-family: Skranji;
+    font-family: Skranji, -apple-system,BlinkMacSystemFont,San Francisco,Helvetica Neue,Helvetica,Ubuntu,Roboto,Noto,Segoe UI,Arial,sans-serif;
+    color: white;
 }
 
 .logo {
     width: 88px;
 }
+
+.credit {
+    position: absolute;
+    bottom: 2px;
+    left: 120px;
+    color: #cccccc;
+    font-family: -apple-system,BlinkMacSystemFont,San Francisco,Helvetica Neue,Helvetica,Ubuntu,Roboto,Noto,Segoe UI,Arial,sans-serif;
+    font-size: 13px;
+}
+
+a {
+    color: #cccccc;
+}
+
+
 
