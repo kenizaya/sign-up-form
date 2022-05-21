@@ -1,8 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Skranji:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Skranji:wght@700&display=swap');
+
+:root {
+    --text-color: #cccccc;
+}
 
 body {
     padding: 0;
     margin: 0;
+    font-family: Roboto, sans-serif;
 }
 .container {
     height: 100vh;
@@ -36,13 +41,36 @@ body {
     position: absolute;
     bottom: 2px;
     left: 120px;
-    color: #cccccc;
+    color: var(--text-color);
     font-family: -apple-system,BlinkMacSystemFont,San Francisco,Helvetica Neue,Helvetica,Ubuntu,Roboto,Noto,Segoe UI,Arial,sans-serif;
     font-size: 13px;
 }
 
 a {
-    color: #cccccc;
+    color: var(--text-color);
+}
+
+.right {
+    padding: 100px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #000000;
+}
+
+p {
+    font-size: 24px;
+    color: var(--text-color);
+    width: 50ch;
+}
+
+form {
+    margin: 0;
+}
+
+label {
+    color: var(--text-color);
 }
 
 
