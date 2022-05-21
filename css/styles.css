@@ -4,15 +4,21 @@
     --text-color: #cccccc;
 }
 
+input,
+button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
 body {
     padding: 0;
     margin: 0;
     font-family: Roboto, sans-serif;
+    box-sizing: border-box;
 }
 .container {
     height: 100vh;
-    margin: 0;
-    padding: 0;
     display: flex;
 }
 
@@ -40,10 +46,9 @@ body {
 .credit {
     position: absolute;
     bottom: 2px;
-    left: 120px;
-    color: var(--text-color);
+    color: #888888;
     font-family: -apple-system,BlinkMacSystemFont,San Francisco,Helvetica Neue,Helvetica,Ubuntu,Roboto,Noto,Segoe UI,Arial,sans-serif;
-    font-size: 13px;
+    font-size: 0.6rem;
 }
 
 a {
@@ -51,7 +56,6 @@ a {
 }
 
 .right {
-    padding: 100px;
     width: 70%;
     display: flex;
     flex-direction: column;
@@ -60,18 +64,95 @@ a {
 }
 
 p {
+    padding-top: 60px;
+    padding-left: 80px;
+    padding-bottom: 20px;
+    margin: 0;
     font-size: 24px;
     color: var(--text-color);
     width: 50ch;
 }
 
 form {
-    margin: 0;
+    max-width: 650px;
+    height: 200px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.form-container {
+    padding-left: 80px;
+    padding-bottom: 30px;
+    box-shadow: 2px 0px 0px 2px #111111;
+}
+
+.legend{
+    font-size: 24px;
+    color: var(--text-color);
+    padding: 20px 0;
+}
+
+.form-inputs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.form-fields {
+    display: flex;
+    flex-direction: column;
 }
 
 label {
+    color: #999999;
+    font-size: 0.66rem;
+    text-transform: uppercase;
+}
+
+input {
+    width: 300px;
+    height: 18px;
+    background-color: #000000;
+    border: 1px solid var(--text-color);
+    border-radius: 2px;
     color: var(--text-color);
 }
+
+input:focus {
+    border: 1px solid #b6473a;
+    outline: none;
+}
+
+input[type="password"]:invalid:focus {
+    border: 1px solid #ff0000;
+}
+
+button {
+    padding: 15px 50px;
+    border: 5px solid #b6473a;
+    background-color: #000000;
+    color: #b6473a;
+    font-size: 20px;
+    border-radius: 8px;
+    margin-top: 90px;
+}
+
+button:hover {
+    background-color: #b6473a;
+    color: #000000;
+}
+
+#login {
+    font-size: 18px;
+    color: #cccccc;
+    margin-top: 40px;
+}
+
+#login a {
+    color: #b6473a;
+    font-weight: bolder;
+}
+
 
 
 

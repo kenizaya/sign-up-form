@@ -27,27 +27,45 @@
             <p>You <em>know</em> you want to.</p>
 
             <div class="form-container">
-                <p>Let's do this!</p>
+                <div class="legend">Let's do this!</div>
                 <form action="#">
-                    <label for="first-name">First Name</label>
-                    <input type="text" id="first-name">
-                    
-                    <label for="last-name">Last Name</label>
-                    <input type="text" id="last-name">
-                    
-                    <label for="mail">Email</label>
-                    <input type="email" id="mail">
-                    
-                    <label for="number">Phone Number</label>
-                    <input type="tel" id="number">
-                    
-                    <label for="pwd">Password</label>
-                    <input type="password" id="pwd">
-                    
-                    <label for="confirm-pwd">Confirm Password</label>
-                    <input type="password" id="confirm-pwd">
+
+                    <div class="form-inputs">
+                        <div class="form-fields">
+                            <label for="first-name">First Name</label>
+                            <input type="text" class="left-label "id="first-name" required>
+                        </div>
+    
+                        <div class="form-fields">
+                            <label for="last-name">Last Name</label>
+                            <input type="text" class="right-label" id="last-name" required>
+                        </div>
+    
+                        <div class="form-fields">
+                            <label for="mail">Email</label>
+                            <input type="email" class="left-label "id="mail" required>
+                        </div>
+    
+                        <div class="form-fields">
+                            <label for="number">Phone Number</label>
+                            <input type="tel" class="right-label" id="number">
+                        </div>
+    
+                        <div class="form-fields">
+                            <label for="pwd">Password</label>
+                            <input type="password" class="left-label id="pwd" minlength="8" required>
+                        </div>
+    
+                        <div class="form-fields">
+                            <label for="confirm-pwd">Confirm Password</label>
+                            <input type="password" class="right-label" id="confirm-pwd" minlength="8" required>
+                        </div>
+                    </div>
+
+                    <button type="submit">Create Account</button>
                 </form>
             </div>
+            <p id="login">Already have an account? <a href="#">Login</a></p>
         </div>
     </div>
     
